@@ -1,0 +1,143 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;         
+    /* box-sizing property set show the total width and height of an element is calculated */
+    font-family:gilroy;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+}
+.main{
+    width:100%;
+    height:100vh;
+
+}
+.back img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.back{
+    width:100%;
+    height:100vh;
+    background-color: black;
+}
+.top{
+    pointer-events: none;
+    left:0;
+    top:0;
+    position:absolute;
+    width:100%;
+    height:100vh;
+
+}
+
+.workingarea{
+    position:relative;
+    width:80%;
+    max-width: 1920px;
+    margin:0 auto;
+    height:100vh;
+    
+    
+}
+.nav{
+    display: flex; 
+    justify-content:space-between;
+    align-items: center;
+    width:100%;
+    padding:20px 0;
+    
+}
+    
+.nav img{
+margin-bottom: 10px;
+    height:60px;
+}
+.nleft, .nright{
+    display:flex;
+    align-items: center;
+    gap:40px;
+    
+}
+.nav a{pointer-events: all;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "gilroy";
+    font-size: 12px;
+    font-weight: 600;
+}
+.hero{
+    position:absolute;
+    top:50%;
+    left:0;
+    transform: translate(0%,-50%);
+    /* translate(-0%,50%) in which first value is of width and then height */
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+
+}
+.heroleft{
+    min-width:50%;
+
+}
+
+.heroleft .elem{
+    position:relative;
+    height: 7vw;
+    overflow: hidden;
+}
+.heroleft .elem h1:nth-child(1){
+    top:0;
+}
+ .heroleft .elem h1{
+    position:absolute;
+    top:100%;
+    left:0%;
+    color:#ffffff;
+    font-family:"kajiro";
+    font-weight: 100;
+    font-size: 9vw;
+    line-height: .9;
+    
+} 
+.heroleft button{
+    pointer-events: all;
+    margin-top: 20px;
+    padding:.8vw 2vw;
+    font-size: 4vw;
+    font-family: "kajiro";
+
+}
+
+.heroright{
+    width:17%;
+    display: flex;
+    align-items: flex-end;
+    color:#ffffff;
+    flex-direction: column;
+
+}
+.heroright p{
+    text-align: right;
+    font-weight: 300;
+    font-size: 10px;
+
+}
+.heroright .imagediv{
+    width:100%;
+    background-image:url(https://images.unsplash.com/photo-1602033350291-a9ab8d800269?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+margin:20px 0px 30px 0px;
+background-position: center;
+background-size: cover;
+    height:170px;
+    
+}
+.heroright p:nth-child(3){
+    margin-bottom: 100px;
+}
